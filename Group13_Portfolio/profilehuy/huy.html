@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10131f">
+  <meta name="description" content="Hồ sơ cá nhân Nguyễn Vương Quốc Huy — sinh viên Công nghệ thông tin, yêu tiểu thuyết và board game.">
+  <title>Nguyễn Vương Quốc Huy — Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/huy.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="grain"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Về đầu trang">
+      <span class="brand-mark">HQ</span>
+      <span class="brand-copy"><strong>HỒ SƠ CÁ NHÂN</strong><small>NHÓM 11 / UTH</small></span>
+    </a>
+    <div class="topbar-actions"><button class="theme-toggle" id="themeToggle" type="button" aria-label="Đổi giao diện sáng tối" aria-pressed="false">☼ <span>Sáng / tối</span></button><a class="back-link" href="../group11.html"><span aria-hidden="true">↖</span> Về trang nhóm</a></div>
+  </header>
+
+  <nav class="section-nav" aria-label="Điều hướng trang">
+    <a href="#about">Giới thiệu</a>
+    <a href="#interests">Sở thích</a>
+    <a href="#journey">Hành trình</a>
+    <a href="#approach">Phương pháp</a>
+    <a href="#leadership">Làm việc nhóm</a>
+    <a href="#skills">Năng lực</a>
+    <a href="#projects">Dự án</a>
+    <a href="#goals">Mục tiêu</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> STUDENT PROFILE <span class="eyebrow-year">2026</span></p>
+        <h1>Nguyễn Vương<br><span>Quốc Huy.</span></h1>
+        <p class="hero-role">Sinh viên Công nghệ thông tin <span class="role-divider">/</span> Nhóm trưởng Nhóm 11</p>
+        <p class="hero-intro">Mình quan tâm đến những câu chuyện giàu chiều sâu, những thử thách đòi hỏi tư duy chiến lược và khả năng chuyển hóa ý tưởng thành sản phẩm công nghệ có ý nghĩa.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#about">Khám phá câu chuyện <span>↓</span></a>
+          <a class="text-link" href="#goals">Định hướng của mình ↗</a>
+        </div>
+        <div class="hero-meta">
+          <div><span class="meta-label">NĂM SINH</span><strong>2006</strong></div>
+          <div><span class="meta-label">QUÊ QUÁN</span><strong>Phú Yên, Việt Nam</strong></div>
+          <div><span class="meta-label">LĨNH VỰC</span><strong>Information Technology</strong></div>
+        </div>
+      </div>
+
+      <div class="hero-art reveal" aria-label="Minh họa trừu tượng về sách, chiến thuật và công nghệ">
+        <div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div>
+        <div class="art-grid"></div>
+        <div class="art-card card-book"><span class="card-symbol">〝</span><span class="card-title">STORIES</span><small>01 / IMAGINATION</small></div>
+        <div class="art-card card-game"><span class="game-pips"><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="card-title">STRATEGY</span><small>02 / THINKING</small></div>
+                <div class="art-core">
+          <img src="images/avatar_huy.png" alt="Nguyễn Vương Quốc Huy" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; position: absolute; inset: 0; z-index: 1;">
+          <div class="core-ring" style="z-index: 2;"></div>
+        </div>
+        <div class="art-caption"><span class="caption-line"></span><span>CURIOUS BY NATURE<br>BUILT TO EXPLORE</span></div>
+        <div class="floating-code code-one">01 — THINK</div>
+        <div class="floating-code code-two">02 — CREATE</div>
+      </div>
+      <div class="hero-index"><span>01</span><span class="index-line"></span><span>07</span></div>
+    </section>
+
+    <section class="intro-section section-wrap" id="about">
+      <div class="section-kicker reveal"><span>01</span><span class="kicker-line"></span><span>ABOUT ME</span></div>
+      <div class="intro-grid">
+        <h2 class="reveal">Tò mò về thế giới.<br><em>Hứng thú với cách nó vận hành.</em></h2>
+        <div class="intro-text reveal">
+          <p>Mình là Nguyễn Vương Quốc Huy, sinh năm 2006, quê ở Phú Yên và hiện theo học ngành Công nghệ thông tin. Trong các hoạt động học tập, mình đảm nhiệm vai trò nhóm trưởng Nhóm 11 — một cơ hội để học cách tổ chức công việc, lắng nghe nhiều góc nhìn và cùng tập thể hướng đến mục tiêu chung.</p>
+          <p>Mình xem sự tò mò là điểm khởi đầu của quá trình học tập chủ động. Việc đọc tiểu thuyết mở ra những hệ quy chiếu đa dạng về con người và xã hội; trong khi board game tạo điều kiện để quan sát quy luật, đánh giá phương án, dự đoán hệ quả và phối hợp với người khác.</p>
+          <p>Dù khác biệt về hình thức, cả hai sở thích đều khuyến khích mình quan sát có chủ đích, suy nghĩ đa chiều và kiên nhẫn trước những vấn đề chưa có lời giải ngay lập tức. Đó cũng là những phẩm chất mình mong muốn phát triển trong hành trình tiếp cận công nghệ.</p>
+          <div class="signature">Nguyễn Vương Quốc Huy <span>— HUY</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="interests-section section-wrap" id="interests">
+      <div class="section-kicker reveal"><span>02</span><span class="kicker-line"></span><span>WHAT I LOVE</span></div>
+      <div class="section-heading reveal"><h2>Hai thế giới,<br><em>một tinh thần khám phá.</em></h2><p>Những điều mình yêu thích cũng góp phần định hình cách mình quan sát, suy nghĩ và kết nối với mọi người.</p></div>
+      <div class="interest-grid">
+        <article class="interest-card novel-card reveal">
+          <div class="interest-top"><span class="interest-number">INTEREST / 01</span><span class="interest-icon">↗</span></div>
+          <div class="book-illustration" aria-hidden="true"><div class="book book-back"></div><div class="book book-front"><span>CHƯƠNG<br>MỚI</span><small>KEEP READING</small></div><div class="book-shadow"></div></div>
+          <div class="interest-content"><h3>Đọc tiểu thuyết</h3><p>Mỗi câu chuyện là một chuyến đi qua những thế giới và góc nhìn mới. Mình thích cách nhân vật trưởng thành, những lựa chọn khó khăn và các ý tưởng khiến người đọc suy ngẫm.</p><div class="tag-row"><span>Trí tưởng tượng</span><span>Góc nhìn</span><span>Câu chuyện</span></div></div>
+        </article>
+        <article class="interest-card board-card reveal">
+          <div class="interest-top"><span class="interest-number">INTEREST / 02</span><span class="interest-icon">↗</span></div>
+          <div class="board-illustration" aria-hidden="true"><div class="board-grid"></div><div class="piece piece-one">H</div><div class="piece piece-two">✦</div><div class="piece piece-three">●</div><div class="piece piece-four">◆</div><div class="move-path"></div></div>
+          <div class="interest-content"><h3>Chơi board game</h3><p>Mình thích cảm giác cân nhắc từng nước đi, tìm chiến thuật và cùng bạn bè giải quyết thử thách. Với mình, đó vừa là niềm vui vừa là cơ hội rèn tư duy và tinh thần đồng đội.</p><div class="tag-row"><span>Chiến thuật</span><span>Giải quyết vấn đề</span><span>Kết nối</span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="journey-section section-wrap" id="journey">
+      <div class="section-kicker reveal"><span>03</span><span class="kicker-line"></span><span>MY JOURNEY</span></div>
+      <div class="journey-layout">
+        <div class="journey-heading reveal"><h2>Từ sự tò mò<br>đến <em>Công nghệ thông tin.</em></h2><p>Đối với mình, Công nghệ thông tin không chỉ là hoạt động lập trình, mà còn là quá trình phân tích nhu cầu, thiết kế giải pháp, kiểm chứng giả thuyết và cải tiến sản phẩm dựa trên phản hồi thực tế.</p></div>
+        <div class="journey-steps">
+          <article class="journey-step reveal"><span class="step-marker">01</span><div><span class="step-label">THE SPARK</span><h3>Luôn muốn tìm hiểu “vì sao”</h3><p>Tiểu thuyết khơi gợi trí tưởng tượng; board game khuyến khích mình phân tích tình huống và thử nhiều hướng giải quyết.</p></div></article>
+          <article class="journey-step reveal"><span class="step-marker">02</span><div><span class="step-label">THE CHOICE</span><h3>Chọn ngành Công nghệ thông tin</h3><p>Mình muốn kết hợp tư duy logic và sự sáng tạo để hiểu cách phần mềm vận hành, rồi tự tay tạo ra những thứ hữu ích.</p></div></article>
+          <article class="journey-step reveal"><span class="step-marker">03</span><div><span class="step-label">THE NEXT CHAPTER</span><h3>Học hỏi qua từng dự án</h3><p>Mỗi bài tập và dự án nhóm là một môi trường thực hành: kiến thức được vận dụng vào tình huống cụ thể, sai sót trở thành dữ liệu để điều chỉnh, còn sự hợp tác giúp mình tiếp cận vấn đề từ nhiều góc nhìn hơn.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="approach-section section-wrap" id="approach">
+      <div class="section-kicker reveal"><span>04</span><span class="kicker-line"></span><span>LEARNING PHILOSOPHY</span></div>
+      <div class="approach-layout">
+        <div class="approach-heading reveal"><p class="eyebrow">A METHOD, NOT A SHORTCUT</p><h2>Học sâu hơn.<br><em>Nghĩ có hệ thống.</em></h2><p>Mình muốn xây dựng thói quen học tập không dừng lại ở việc ghi nhớ khái niệm, mà tiến đến khả năng giải thích, vận dụng và tự đánh giá kết quả.</p></div>
+        <div class="principle-list">
+          <article class="principle-card reveal"><span class="principle-index">01</span><div><h3>Đặt câu hỏi trước khi tìm đáp án</h3><p>Xác định bản chất vấn đề, làm rõ điều đã biết và nhận diện phần còn thiếu giúp quá trình tìm hiểu có trọng tâm hơn.</p></div><span class="principle-symbol">⌕</span></article>
+          <article class="principle-card reveal"><span class="principle-index">02</span><div><h3>Chia nhỏ vấn đề phức tạp</h3><p>Tiếp cận từng thành phần, kiểm tra mối liên hệ giữa chúng và giải quyết theo trình tự là cách mình muốn rèn luyện tư duy hệ thống.</p></div><span class="principle-symbol">⌘</span></article>
+          <article class="principle-card reveal"><span class="principle-index">03</span><div><h3>Thực hành, phản hồi, cải tiến</h3><p>Mình coi kết quả ban đầu là điểm xuất phát. Việc thử nghiệm và tiếp nhận góp ý giúp nhận ra hạn chế để tiếp tục hoàn thiện.</p></div><span class="principle-symbol">↻</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="leadership-section section-wrap" id="leadership">
+      <div class="section-kicker reveal"><span>05</span><span class="kicker-line"></span><span>COLLABORATION & LEADERSHIP</span></div>
+      <div class="leadership-intro reveal"><h2>Không chỉ hoàn thành<br><em>phần việc của mình.</em></h2><p>Vai trò nhóm trưởng giúp mình nhìn nhận kết quả tập thể như một quá trình phối hợp — nơi mục tiêu rõ ràng, giao tiếp minh bạch và tinh thần trách nhiệm có ý nghĩa quan trọng.</p></div>
+      <div class="leadership-grid">
+        <article class="leadership-card reveal"><span class="leadership-num">01 / ALIGN</span><div class="leadership-icon">◎</div><h3>Thống nhất mục tiêu</h3><p>Làm rõ yêu cầu, kết quả cần đạt và thứ tự ưu tiên để các thành viên có chung định hướng khi bắt đầu công việc.</p></article>
+        <article class="leadership-card reveal"><span class="leadership-num">02 / COMMUNICATE</span><div class="leadership-icon">↔</div><h3>Trao đổi có trách nhiệm</h3><p>Lắng nghe quan điểm khác biệt, cập nhật tiến độ và trao đổi sớm khi xuất hiện khó khăn nhằm hạn chế hiểu nhầm không cần thiết.</p></article>
+        <article class="leadership-card reveal"><span class="leadership-num">03 / DELIVER</span><div class="leadership-icon">✳</div><h3>Cùng hướng đến kết quả</h3><p>Đề cao sự chủ động và tinh thần hỗ trợ; thành quả của nhóm không chỉ là tổng các phần việc mà còn là chất lượng phối hợp giữa mọi người.</p></article>
+      </div>
+      <p class="leadership-note reveal">Đây là những nguyên tắc mình hướng đến và tiếp tục rèn luyện qua các hoạt động học tập, không phải một tuyên bố rằng bản thân đã hoàn thiện mọi kỹ năng.</p>
+    </section>
+
+    <section class="skills-section section-wrap" id="skills">
+      <div class="section-kicker reveal"><span>06</span><span class="kicker-line"></span><span>GROWTH AREAS</span></div>
+      <div class="skills-layout">
+        <div class="skills-heading reveal"><h2>Năng lực được<br><em>xây dựng từng ngày.</em></h2><p>Mình nhìn nhận năng lực như một quá trình phát triển liên tục. Những lĩnh vực dưới đây là trọng tâm mình muốn củng cố trong thời gian học tập.</p></div>
+        <div class="skill-list">
+          <div class="skill-item reveal"><div class="skill-label"><span>Tư duy logic & phân tích</span><small>ĐANG PHÁT TRIỂN</small></div><div class="skill-track"><span style="--level:68%"></span></div></div>
+          <div class="skill-item reveal"><div class="skill-label"><span>Nền tảng lập trình</span><small>ĐANG CỦNG CỐ</small></div><div class="skill-track"><span style="--level:54%"></span></div></div>
+          <div class="skill-item reveal"><div class="skill-label"><span>Giao tiếp & phối hợp nhóm</span><small>TIẾP TỤC RÈN LUYỆN</small></div><div class="skill-track"><span style="--level:62%"></span></div></div>
+          <div class="skill-item reveal"><div class="skill-label"><span>Tự học & nghiên cứu</span><small>PHÁT TRIỂN BỀN VỮNG</small></div><div class="skill-track"><span style="--level:72%"></span></div></div>
+          <p class="skills-disclaimer">Thanh hiển thị mang tính minh họa cho các lĩnh vực ưu tiên, không phải điểm số hay kết quả đánh giá năng lực chính thức.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section section-wrap" id="projects">
+      <div class="section-kicker reveal"><span>07</span><span class="kicker-line"></span><span>LEARNING PROJECTS</span></div>
+      <div class="projects-heading reveal"><h2>Biến kiến thức<br><em>thành trải nghiệm.</em></h2><p>Một số ý tưởng dự án nhỏ có thể triển khai trong quá trình học tập. Nội dung dưới đây là gợi ý thực hành, không phải tuyên bố rằng các sản phẩm đã hoàn thành.</p></div>
+      <div class="project-filters reveal" role="group" aria-label="Lọc dự án">
+        <button class="filter-btn active" type="button" data-filter="all">Tất cả</button><button class="filter-btn" type="button" data-filter="web">Web cơ bản</button><button class="filter-btn" type="button" data-filter="logic">Tư duy logic</button>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal" data-category="web"><div class="project-topline"><span>PROJECT IDEA / 01</span><span>HTML · CSS</span></div><div class="project-preview preview-web"><div class="preview-window"><i></i><i></i><i></i><span>my-learning-page</span></div><div class="preview-lines"><b></b><b></b><b></b></div></div><h3>Trang giới thiệu cá nhân</h3><p>Xây dựng một website giới thiệu bản thân với bố cục rõ ràng, màu sắc nhất quán và khả năng hiển thị tốt trên điện thoại lẫn máy tính.</p><div class="tag-row"><span>Semantic HTML</span><span>Responsive CSS</span></div><p class="project-status">Định hướng thực hành · Có thể phát triển tiếp</p></article>
+        <article class="project-card reveal" data-category="logic"><div class="project-topline"><span>PROJECT IDEA / 02</span><span>JAVASCRIPT</span></div><div class="project-preview preview-logic"><div class="logic-node node-a">INPUT</div><div class="logic-line"></div><div class="logic-node node-b">PROCESS</div><div class="logic-line"></div><div class="logic-node node-c">RESULT</div></div><h3>Công cụ quản lý công việc nhỏ</h3><p>Phác thảo một ứng dụng ghi nhận nhiệm vụ, đánh dấu trạng thái hoàn thành và lọc danh sách. Dự án giúp luyện tập thao tác DOM, sự kiện và tổ chức dữ liệu.</p><div class="tag-row"><span>DOM</span><span>Events</span><span>Problem solving</span></div><p class="project-status">Định hướng thực hành · Có thể phát triển tiếp</p></article>
+      </div>
+    </section>
+
+    <section class="goals-section section-wrap" id="goals">
+      <div class="section-kicker reveal"><span>08</span><span class="kicker-line"></span><span>LOOKING AHEAD</span></div>
+      <div class="goals-header reveal"><h2>Chương tiếp theo<br><em>do mình viết.</em></h2><p>Mình không cần biết trước mọi câu trả lời. Điều quan trọng là tiếp tục học, thử nghiệm và tiến bộ sau mỗi trải nghiệm.</p></div>
+      <div class="goal-grid">
+        <article class="goal-card reveal"><span class="goal-index">NOW / 01</span><div class="goal-icon">↗</div><h3>Trước mắt</h3><p>Củng cố nền tảng lập trình, nâng cao tư duy logic, chủ động tham gia dự án học tập và cải thiện khả năng làm việc nhóm.</p><div class="goal-line"><span></span></div></article>
+        <article class="goal-card goal-featured reveal"><span class="goal-index">FUTURE / 02</span><div class="goal-icon">✳</div><h3>Về lâu dài</h3><p>Trở thành người làm công nghệ có năng lực chuyên môn vững vàng, không ngừng cập nhật kiến thức và xây dựng những sản phẩm có giá trị thực tế.</p><div class="goal-line"><span></span></div></article>
+      </div>
+      <div class="closing-note reveal"><span class="closing-mark">“</span><p>Mình tin rằng mỗi trải nghiệm đều có thể trở thành một nước đi tốt — miễn là mình chịu quan sát, suy nghĩ và tiếp tục tiến về phía trước.</p><span class="closing-credit">— QUỐC HUY</span></div>
+    </section>
+  <section class="contact-section section-wrap" id="contact">
+  <div class="section-kicker reveal">
+    <span>09</span>
+    <span class="kicker-line"></span>
+    <span>GET IN TOUCH</span>
+  </div>
+
+  <div class="contact-layout">
+
+    <div class="contact-copy reveal">
+      <h2>
+        Mọi cuộc trao đổi<br>
+        <em>đều có thể mở ra ý tưởng.</em>
+      </h2>
+
+      <p>
+        Nếu bạn muốn trao đổi về bài tập, dự án học tập hoặc cách phối hợp làm việc nhóm,
+        có thể để lại lời nhắn tại đây.
+      </p>
+
+      <div class="contact-info">
+
+        <div class="contact-info-item">
+          <span class="contact-info-icon">✉</span>
+          <div>
+            <span class="contact-info-label">EMAIL</span>
+            <a href="mailto:huy26232@gmail.com">
+              huy26232@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <span class="contact-info-icon">☎</span>
+          <div>
+            <span class="contact-info-label">ĐIỆN THOẠI</span>
+            <a href="tel:0387676664">
+              0387 676 664
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <span class="contact-info-icon">⌖</span>
+          <div>
+            <span class="contact-info-label">ĐỊA CHỈ</span>
+            <span class="contact-info-value">
+              Bình Lợi Trung, TP. Hồ Chí Minh
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm" novalidate>
+
+      <label for="contactName">Họ và tên</label>
+      <input
+        id="contactName"
+        name="name"
+        type="text"
+        placeholder="Nhập tên của bạn"
+        required
+        minlength="2"
+      >
+
+      <label for="contactEmail">Email</label>
+      <input
+        id="contactEmail"
+        name="email"
+        type="email"
+        placeholder="name@example.com"
+        required
+      >
+
+      <label for="contactMessage">Nội dung</label>
+      <textarea
+        id="contactMessage"
+        name="message"
+        rows="4"
+        placeholder="Bạn muốn trao đổi điều gì?"
+        required
+        minlength="10"
+      ></textarea>
+
+      <button class="button button-primary" type="submit">
+        Kiểm tra thông tin
+        <span>↗</span>
+      </button>
+
+      <p
+        class="form-feedback"
+        id="formFeedback"
+        role="status"
+        aria-live="polite"
+      ></p>
+
+    </form>
+
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="footer-main"><a class="brand" href="#top"><span class="brand-mark">HQ</span><span class="brand-copy"><strong>NGUYỄN VƯƠNG QUỐC HUY</strong><small>NHÓM 11 · UTH</small></span></a><a class="back-link" href="../group11.html">← Quay lại trang nhóm</a></div>
+    <div class="footer-bottom"><span>PERSONAL PROFILE / 2026</span><span>Được tạo bằng sự tò mò và tinh thần học hỏi.</span></div>
+  </footer>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Về đầu trang">↑</button>
+  <script src="js/huy.js"></script>
+</body>
+</html>

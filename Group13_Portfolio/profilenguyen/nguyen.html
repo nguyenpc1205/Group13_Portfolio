@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE | GROUP11</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Thư viện Three.js tạo hiệu ứng 3D -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Canvas Nền 3D -->
+    <canvas id="bg3d"></canvas>
+
+    <!-- Layout Nội dung -->
+    <div class="content-wrapper">
+        
+        <!-- I. Header / Navbar / Banner -->
+        <header class="navbar">
+            <div class="logo">GROUP11 | <span>PCN</span></div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about">Giới thiệu</a></li>
+                    <li><a href="#skills">Kỹ năng</a></li>
+                    <li><a href="#projects">Dự án</a></li>
+                    <li><a href="#experience">Kinh nghiệm</a></li>
+                    <li><a href="#certificates">Chứng chỉ & Sở thích</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn-toggle">🌙 Dark Mode</button>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Giới thiệu & Mục tiêu -->
+        <section id="about" class="hero section">
+            <div class="hero-avatar">
+    <svg viewBox="0 0 100 100" class="avatar-img" width="100%" height="100%">
+        <defs>
+            <clipPath id="avatar-clip">
+                <circle cx="50" cy="50" r="50" />
+            </clipPath>
+        </defs>
+        <image 
+            href="images/avatar.png" 
+            x="0" 
+            y="0" 
+            width="100" 
+            height="100" 
+            clip-path="url(#avatar-clip)"
+            preserveAspectRatio="xMidYMid slice" 
+        />
+    </svg>
+</div>
+
+            <h1 class="glow-title">PHẠM CHẤN NGUYÊN</h1>
+            <p class="role-subtitle">Frontend & Web Developer</p>
+            <p class="bio-text">
+                Chào bạn! Tôi là sinh viên năm 3 ngành Công nghệ Thông tin hiện đang theo học tại Trường Đại học Giao thông Vận tải TPHCM. Đam mê xây dựng các sản phẩm web tương tác cao, giao diện ấn tượng và tối ưu hóa trải nghiệm người dùng.
+            </p>
+            <div class="goal-box">
+                 <strong>Mục tiêu nghề nghiệp:</strong> Trở thành Frontend Developer chuyên nghiệp, thành thạo các framework hiện đại (ReactJS, Next.js), tối ưu giao diện responsive và nâng cao trải nghiệm người dùng (UI/UX) cho các ứng dụng web.
+
+Mục tiêu dài hạn: Phát triển thành Senior Frontend Architect, chuyên tối ưu hóa hiệu năng trang web (Web Performance Optimization) và xây dựng hệ thống Design System chuẩn hóa cho doanh nghiệp.
+            </div>
+        </section>
+
+        <!-- Kỹ năng -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Kỹ Năng Chuyên Môn</h2>
+            <div class="skills-container">
+                <div class="skill-card"><span class="icon"><img src="images/html.png" width="50" height="50"  ></span> HTML5 / HTML</div>
+                <div class="skill-card"><span class="icon"><img src="images/css.png" width="50" height="50"  ></span> CSS3 / ReactJS</div>
+                <div class="skill-card"><span class="icon"><img src="images/java.png" width="50" height="50"  ></span> JavaScript / Java</div>
+                <div class="skill-card"><span class="icon"><img src="images/C.png" width="50" height="50"  ></span> C#</div>
+                <div class="skill-card"><span class="icon"><img src="images/C++.png" width="50" height="50"  ></span> C++</div>
+                <div class="skill-card"><span class="icon"><img src="images/python.png" width="50" height="50"  ></span> Python</div>
+                <div class="skill-card"><span class="icon"><img src="images/GitHub.png" width="50" height="50"  ></span> Git / GitHub</div>
+            </div>
+        </section>
+
+        <!-- Dự án cá nhân (Nghiêng 3D Tilt) -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Dự Án Cá Nhân</h2>
+            <div class="projects-grid">
+                
+                <article class="project-card card-3d">
+                    <div class="card-inner">
+                        <div class="project-tag">ReactJS / Python</div>
+                        <h3>Dự Án 1: CollabSphere-Project</h3>
+                        <p>Hệ thống hỗ trợ việc học theo phương pháp project-based learning.</p>
+                        <p class="tech-stack"><strong>Công nghệ:</strong> Reactjs, Python, PostgreSQL</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Khoa-dev7/CollabSphere-Project" class="btn-link outline" target="_blank">Source Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card card-3d">
+                    <div class="card-inner">
+                        <div class="project-tag">WinForms / C#</div>
+                        <h3>Dự Án 2: OnlineWhiteboard_NetworkProgramming</h3>
+                        <p>Ứng dụng quản lý công việc thông minh với tính năng kéo thả (Drag & Drop), lọc tiến độ và lưu trữ dữ liệu.</p>
+                        <p class="tech-stack"><strong>Công nghệ:</strong> C#, WinForms, TCP Socket, SQLite</p>
+                        <div class="project-links">
+                            <a href="https://github.com/nguyenpc1205/OnlineWhiteboard_NetworkProgramming" class="btn-link outline" target="_blank">Source Code</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Học vấn & Kinh nghiệm -->
+        <section id="experience" class="section">
+            <h2 class="section-title">Học Vấn & Hoạt Động</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Trường Đại học Giao thông Vận tải TPHCM</h4>
+                    <span class="date">2026 - Hiện tại</span>
+                    <p></p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Thành viên CLB CNTT</h4>
+                    <span class="date">2025 - 2026</span>
+                    <p>Tham gia hỗ trợ tổ chức các buổi workshop hướng dẫn HTML/CSS/JS cho tân sinh viên.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Chứng Chỉ & Sở Thích (Tiêu chí 7) -->
+        <section id="certificates" class="section">
+            <h2 class="section-title">Chứng Chỉ & Sở Thích</h2>
+            <div class="cert-grid">
+                <div class="cert-card card-3d">
+                    <div class="card-inner">
+                        <div class="cert-badge">📜 Chứng chỉ CNTT</div>
+                        <h3>Ứng Dụng CNTT Cơ Bản</h3>
+                        <p class="cert-issuer">Đại học Giao thông Vận tải TP.HCM (UTH)</p>
+                        <p class="cert-desc">Chứng nhận chuẩn kỹ năng sử dụng công nghệ thông tin cơ bản theo thông tư 03/2014/TT-BTTTT.</p>
+                        <span class="cert-year">Năm cấp: 2024</span>
+                    </div>
+                </div>
+
+                <div class="cert-card card-3d">
+                    <div class="card-inner">
+                        <div class="cert-badge">🏆 Hoạt động nhóm</div>
+                        <h3>Thành Viên Nhóm 11 - Web Dev</h3>
+                        <p class="cert-issuer">Bộ môn Lập trình Web - UTH</p>
+                        <p class="cert-desc">Phát triển đồ án web portfolio cá nhân tích hợp canvas 3D tương tác, phong cách Cyberpunk.</p>
+                        <span class="cert-year">Niên khóa: 2024 - 2026</span>
+                    </div>
+                </div>
+
+                <div class="cert-card card-3d">
+                    <div class="card-inner">
+                        <div class="cert-badge">🎨 Sở thích cá nhân</div>
+                        <h3>Khám Phá & Đam Mê</h3>
+                        <p class="cert-issuer">Lifestyle & Kỹ thuật</p>
+                        <p class="cert-desc">Đam mê tìm hiểu đồ họa Three.js, nghiên cứu mạng máy tính, chơi bóng đá rèn luyện sức khỏe.</p>
+                        <span class="cert-year">Đam mê thường nhật</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Liên Hệ -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Liên Hệ Với Tôi</h2>
+            <form id="contact-form" class="glass-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Họ và tên *</label>
+                    <input type="text" id="name" placeholder="Nguyễn Văn A">
+                    <small class="error-msg" id="name-error"></small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" placeholder="example@gmail.com">
+                    <small class="error-msg" id="email-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Lời nhắn *</label>
+                    <textarea id="message" rows="4" placeholder="Nhập nội dung lời nhắn..."></textarea>
+                    <small class="error-msg" id="message-error"></small>
+                </div>
+
+                <button type="submit" class="btn-submit">Gửi Tin Nhắn </button>
+                <p id="form-status" class="form-status"></p>
+            </form>
+        </section>
+        <div class="back-navigation">
+            <a href="../group11.html" class="btn-back-home">
+                <span class="icon">←</span> Quay về Group 11
+            </a>
+        </div>
+        <footer>
+            <p>Designed & Developed by Phạm Chấn Nguyên © 2026</p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

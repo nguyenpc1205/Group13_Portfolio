@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm 11 - Web Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Lớp Màu Nền (Background) RGB tự động chuyển đổi khi cuộn chuột xuống -->
+    <div id="ambient-bg" class="ambient-bg">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Các khối 3D HTML/CSS lơ lửng xoay theo cuộn chuột -->
+    <div class="scene-3d-layer" aria-hidden="true">
+        <div class="cube-3d" id="cubeLeft">
+            <div class="cube-face front">11</div>
+            <div class="cube-face back">UTH</div>
+            <div class="cube-face right">HTML</div>
+            <div class="cube-face left">CSS3</div>
+            <div class="cube-face top">3D</div>
+            <div class="cube-face bottom">RGB</div>
+        </div>
+        <div class="gyro-3d" id="gyroRight">
+            <div class="gyro-ring ring-x"></div>
+            <div class="gyro-ring ring-y"></div>
+            <div class="gyro-ring ring-z"></div>
+            <div class="gyro-core"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">NHÓM<span>11</span></a>
+            <ul class="nav-links">
+                <li><a href="#hero">Trang Chủ</a></li>
+                <li><a href="#members">Thành Viên</a></li>
+                <li><a href="#group-details">Thông Tin</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-3d-halo">
+                    <div class="halo-ring halo-1"></div>
+                    <div class="halo-ring halo-2"></div>
+                </div>
+                <h1 class="glow-title">NHÓM 11</h1>
+                <p class="subtitle">"Thà một phút huy hoàng rồi chợt tắt,<br>còn hơn buồn lặng lẽ suốt trăm năm"</p>
+                <a href="#members" class="btn-explore">Khám Phá <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+            </div>
+        </section>
+
+        <!-- Members Section (Bố cục Trục Dọc) -->
+        <section id="members" class="members-section">
+            <div class="container relative-container">
+                <h2 class="section-title">Thành Viên Đội</h2>
+
+                <div class="street-timeline">
+                    <!-- Trục Neon chạy dọc -->
+                    <div class="neon-line">
+                        <div class="neon-line-fill" id="neonProgress"></div>
+                    </div>
+
+                    <!-- Thành viên 1: Trần Ngọc Lâm -->
+                    <div class="timeline-item pop-left burst-fade">
+                        <div class="timeline-content left">
+                            <div class="elegant-card">
+                                <div class="avatar-container" onclick="handleAvatarClick(this, 'profilelam/lam.html')">
+                                    <div class="avatar-frame">
+                                        <div class="avatar-orbit-ring"></div>
+                                        <img src="images/avatars/avatar_lam.png" alt="Trần Ngọc Lâm" class="avatar-img">
+                                        <div class="overlay-3d"><span>Xem Profile</span></div>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Trần<br>Ngọc<br>Lâm</h3>
+                                    <p class="role">Thành viên</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thành viên 2: Nguyễn Vương Quốc Huy (Leader) -->
+                    <div class="timeline-item pop-right burst-fade">
+                        <div class="timeline-content right">
+                            <div class="elegant-card">
+                                <div class="avatar-container" onclick="handleAvatarClick(this, 'profilehuy/huy.html')">
+                                    <div class="avatar-frame">
+                                        <div class="avatar-orbit-ring"></div>
+                                        <img src="images/avatars/avatar_huy.png" alt="Nguyễn Vương Quốc Huy" class="avatar-img">
+                                        <div class="overlay-3d"><span>Xem Profile</span></div>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Nguyễn<br>Vương<br>Quốc<br>Huy</h3>
+                                    <p class="role"><span class="leader-badge"><i class="fas fa-crown"></i> Nhóm trưởng</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thành viên 3: Mai Hoàng Danh -->
+                    <div class="timeline-item pop-left burst-fade">
+                        <div class="timeline-content left">
+                            <div class="elegant-card">
+                                <div class="avatar-container" onclick="handleAvatarClick(this, 'profiledanh/danh.html')">
+                                    <div class="avatar-frame">
+                                        <div class="avatar-orbit-ring"></div>
+                                        <img src="images/avatars/avatar_danh.png" alt="Mai Hoàng Danh" class="avatar-img">
+                                        <div class="overlay-3d"><span>Xem Profile</span></div>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Mai<br>Hoàng<br>Danh</h3>
+                                    <p class="role">Thành viên</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thành viên 4: Nguyễn Minh Hiếu -->
+                    <div class="timeline-item pop-right burst-fade">
+                        <div class="timeline-content right">
+                            <div class="elegant-card">
+                                <div class="avatar-container" onclick="handleAvatarClick(this, 'profilehieu/hieu.html')">
+                                    <div class="avatar-frame">
+                                        <div class="avatar-orbit-ring"></div>
+                                        <img src="images/avatars/avatar_hieu.png" alt="Nguyễn Minh Hiếu" class="avatar-img">
+                                        <div class="overlay-3d"><span>Xem Profile</span></div>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Nguyễn<br>Minh<br>Hiếu</h3>
+                                    <p class="role">Thành viên</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thành viên 5: Võ Tuấn Kiệt -->
+                    <div class="timeline-item pop-left burst-fade">
+                        <div class="timeline-content left">
+                            <div class="elegant-card">
+                                <div class="avatar-container" onclick="handleAvatarClick(this, 'profilekiet/kiet.html')">
+                                    <div class="avatar-frame">
+                                        <div class="avatar-orbit-ring"></div>
+                                        <img src="images/avatars/avatar_kiet.png" alt="Võ Tuấn Kiệt" class="avatar-img">
+                                        <div class="overlay-3d"><span>Xem Profile</span></div>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Võ<br>Tuấn<br>Kiệt</h3>
+                                    <p class="role">Thành viên</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thành viên 6: Phạm Chấn Nguyên -->
+                    <div class="timeline-item pop-right burst-fade">
+                        <div class="timeline-content right">
+                            <div class="elegant-card">
+                                <div class="avatar-container" onclick="handleAvatarClick(this, 'profilenguyen/nguyen.html')">
+                                    <div class="avatar-frame">
+                                        <div class="avatar-orbit-ring"></div>
+                                        <img src="images/avatars/avatar_nguyen.png" alt="Phạm Chấn Nguyên" class="avatar-img">
+                                        <div class="overlay-3d"><span>Xem Profile</span></div>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Phạm<br>Chấn<br>Nguyên</h3>
+                                    <p class="role">Thành viên</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Group Details Section -->
+        <section id="group-details" class="details-section">
+            <div class="container">
+                <div class="elegant-box burst-fade">
+                    <h2 class="box-title">Thông Tin Chi Tiết</h2>
+                    <div class="divider"></div>
+                    <p class="desc-text">Hệ thống cổng thông tin chính thức Nhóm 11 — Môn Lập Trình Web, Khoa CNTT, Trường Đại học Giao thông vận tải TP.HCM (UTH K24).</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bản quyền thuộc về Nhóm 11. Sự hoàn hảo của mọi tinh hoa.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

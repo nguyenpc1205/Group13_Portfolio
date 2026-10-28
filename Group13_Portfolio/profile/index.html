@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trần Ngọc Lâm | Hồ Sơ Năng Lực & Không Gian Sáng Tạo</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body class="mi-style-dark">
+
+    <!-- Scroll Progress Bar ở đỉnh trang -->
+    <div class="scroll-progress-bar" id="progressBar"></div>
+
+    
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="cursor-trail" id="cursorTrail"></div>
+
+ 
+    <header class="global-top-bar">
+        <div class="mi-shell flex-between">
+            <div class="global-brand">
+                <span class="brand-monogram">TNL</span>
+                <span class="brand-sep">|</span>
+                <span class="brand-sub">HỒ SƠ CÁ NHÂN NHÓM 11</span>
+            </div>
+            <div class="global-actions">
+                <button id="darkModeToggle" class="btn-dark-toggle" title="Chuyển chế độ sáng/tối">
+                    <i class="fas fa-sun" id="darkModeIcon"></i>
+                    <span id="darkModeLabel">Light Mode</span>
+                </button>
+                <a href="../group11.html" class="btn-group-nav">
+                    <i class="fas fa-arrow-left"></i> Về Trang Nhóm 11
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <nav class="sticky-subnav" id="stickySubnav">
+        <div class="mi-shell subnav-flex">
+            <div class="subnav-left">
+                <a href="#overview" class="subnav-title">Trần Ngọc Lâm</a>
+            </div>
+            <div class="subnav-center">
+                <ul class="subnav-menu">
+                    <li><a href="#overview" class="subnav-link active">Tổng quan</a></li>
+                    <li><a href="#design" class="subnav-link">Bản sắc & Lối sống</a></li>
+                    <li><a href="#performance" class="subnav-link">Mục tiêu & Kỹ năng</a></li>
+                    <li><a href="#projects" class="subnav-link">Dự án</a></li>
+                    <li><a href="#education" class="subnav-link">Học vấn</a></li>
+                    <li><a href="#certificates" class="subnav-link">Chứng chỉ</a></li>
+                    <li><a href="#specs" class="subnav-link">Thông số năng lực</a></li>
+                </ul>
+            </div>
+            <div class="subnav-right">
+                <a href="#contact" class="btn-subnav-cta">Liên hệ ngay</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-main-container">
+
+        <!-- ==================== 2. HERO PINNED SECTION (PIN & ZOOM KHI CUỘN) ==================== -->
+        <section id="overview" class="hero-pinned-section">
+            <div class="hero-pin-wrapper">
+                
+                <div class="hero-header-block gsap-fade">
+                    <div class="edition-pill">
+                        <span class="pill-dot"></span>
+                        <span>PORTFOLIO PROFILE // 2026</span>
+                    </div>
+                    <h1 class="hero-headline">TRẦN NGỌC LÂM</h1>
+                    <p class="hero-slogan">Kiệt tác từ sự đam mê</p>
+                    <p class="hero-summary">
+                        Thành viên Nhóm 11 • Sinh viên Khoa CNTT - Đại học GTVT TP.HCM (UTH) • Quê Thái Bình
+                    </p>
+                </div>
+
+               
+                <div class="hero-art-stage gsap-fade">
+                    <div class="hero-art" aria-label="Minh họa 3D tương tác 60FPS">
+                        <div class="art-grid"></div>
+                        <div class="art-orbit orbit-a"></div>
+                        <div class="art-orbit orbit-b"></div>
+                        
+                        <!-- Card 1: C++ Architecture & Logic -->
+                        <div class="art-card card-book">
+                            <span class="card-symbol"><i class="fas fa-terminal"></i></span>
+                            <span class="card-title">C++ ARCHITECTURE</span>
+                            <small>01 // SYSTEM & OOP</small>
+                        </div>
+                        
+                        <!-- Card 2: Omnichannel & Inventory -->
+                        <div class="art-card card-game">
+                            <span class="game-pips"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                            <span class="card-title">OMNICHANNEL</span>
+                            <small>02 // INVENTORY & SCALE</small>
+                        </div>
+                        
+                        <!-- Core Avatar Lâm with glowing rotating ring -->
+                        <div class="art-core">
+                            <img src="images/avatar_lam.png" alt="Trần Ngọc Lâm" class="hero-avatar-photo">
+                            <div class="core-ring"></div>
+                        </div>
+                        
+                        <div class="art-caption">
+                            <span class="caption-line"></span>
+                            <span>PASSION DRIVEN<br>BUILT TO CONQUER</span>
+                        </div>
+                        
+                        <div class="floating-code code-one">01 — C++ / OOP</div>
+                        <div class="floating-code code-two">02 — LOGIC & SCALE</div>
+                    </div>
+                </div>
+
+               
+                <div class="hero-specs-ribbon gsap-fade">
+                    <div class="spec-col">
+                        <div class="spec-val">2006</div>
+                        <div class="spec-label">Năm sinh thế hệ Z</div>
+                        <div class="spec-sub">Thái Bình • Nhiệt huyết</div>
+                    </div>
+                    <div class="spec-sep"></div>
+                    <div class="spec-col">
+                        <div class="spec-val">UTH</div>
+                        <div class="spec-label">Đại học GTVT TP.HCM</div>
+                        <div class="spec-sub">Khoa CNTT - Khóa 2024</div>
+                    </div>
+                    <div class="spec-sep"></div>
+                    <div class="spec-col">
+                        <div class="spec-val">C++</div>
+                        <div class="spec-label">Ngôn ngữ cốt lõi</div>
+                        <div class="spec-sub">OOP & Cấu trúc dữ liệu</div>
+                    </div>
+                    <div class="spec-sep"></div>
+                    <div class="spec-col">
+                        <div class="spec-val">100%</div>
+                        <div class="spec-label">Hòa đồng & Tích cực</div>
+                        <div class="spec-sub">Khát khao cuộc sống mới</div>
+                    </div>
+                </div>
+
+                <!-- Scroll Prompt -->
+                <div class="hero-scroll-cue">
+                    <span class="cue-text">Cuộn để xem tiếp</span>
+                    <div class="cue-arrow"><i class="fas fa-chevron-down"></i></div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================== 3. BẢN SẮC & THIẾT KẾ (DESIGN SHOWCASE) ==================== -->
+        <section id="design" class="flagship-section design-section">
+            <div class="mi-shell">
+                <div class="section-title-area gsap-reveal">
+                    <span class="area-tag">THIẾT KẾ BẢN SẮC</span>
+                    <h2 class="area-heading">Đơn giản. Tinh tế. Luôn hòa đồng.</h2>
+                    <p class="area-desc">
+                        Không cầu kỳ phô trương, sự thanh lịch toát lên từ thái độ tích cực, sự cởi mở trong giao tiếp và những bước chân dạo bộ thư thái làm mới tư duy.
+                    </p>
+                </div>
+
+                <!-- Visual Showcase lớn toàn màn hình -->
+                <div class="lifestyle-feature-card gsap-reveal">
+                    <div class="card-bg-gradient"></div>
+                    <div class="lifestyle-grid">
+                        <div class="lifestyle-text">
+                            <div class="quote-mark"><i class="fas fa-quote-left"></i></div>
+                            <h3>"Thích đi dạo & Luôn hòa đồng trong mọi tập thể"</h3>
+                            <p>
+                                Đối với tôi, sau các giờ học và lập trình căng thẳng, sở thích lớn nhất là <strong>đi dạo</strong>. Việc dạo bước thư thả giúp tôi ngắm nhìn nhịp sống, giải tỏa áp lực và khơi thông những ý tưởng sáng tạo mới mẻ.
+                            </p>
+                            <p>
+                                Trong mọi hoạt động nhóm, tôi luôn đặt sự <strong>hòa đồng</strong>, thân thiện và lắng nghe lên hàng đầu để cùng các thành viên Nhóm 11 hoàn thành xuất sắc mọi thử thách đồ án.
+                            </p>
+                            <div class="lifestyle-tags">
+                                <span class="tag-chip"><i class="fas fa-walking"></i> Thích đi dạo</span>
+                                <span class="tag-chip"><i class="fas fa-smile"></i> Tính cách hòa đồng</span>
+                                <span class="tag-chip"><i class="fas fa-users"></i> Phối hợp đồng đội</span>
+                            </div>
+                        </div>
+                        <div class="lifestyle-visual">
+                            <div class="abstract-silhouette">
+                                <div class="orbit-circle orbit-1"></div>
+                                <div class="orbit-circle orbit-2"></div>
+                                <div class="orbit-center">
+                                    <i class="fas fa-compass"></i>
+                                    <span>HÒA ĐỒNG</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 4. HIỆU NĂNG & MỤC TIÊU (BENTO GRID SHOWCASE) ==================== -->
+        <section id="performance" class="flagship-section bento-section">
+            <div class="mi-shell">
+                <div class="section-title-area gsap-reveal">
+                    <span class="area-tag">HIỆU NĂNG & ĐỘNG LỰC</span>
+                    <h2 class="area-heading">Mục tiêu rõ ràng. Bứt phá giới hạn.</h2>
+                    <p class="area-desc">
+                        Tương tự như một bộ vi xử lý mạnh mẽ cần định hướng chính xác, mục tiêu cụ thể và kỹ năng thực tế chính là động cơ bứt phá.
+                    </p>
+                </div>
+
+                
+                <div class="flagship-bento-grid">
+                    
+                    <!-- Bento 1: Mục tiêu ngắn hạn -->
+                    <div class="bento-box bento-item-gold gsap-reveal">
+                        <div class="bento-badge"><i class="fas fa-bolt"></i> MỤC TIÊU NGẮN HẠN</div>
+                        <div class="bento-metric">KIẾM TIỀN</div>
+                        <h3>Áp Dụng Kiến Thức Vào Thực Tiễn</h3>
+                        <p>
+                            Chăm chỉ rèn luyện kỹ năng code, tham gia thực chiến các bài tập lớn và dự án web để sớm tạo ra nguồn thu nhập chủ động đầu tiên ngay trong thời sinh viên.
+                        </p>
+                        <div class="bento-bottom-pill">
+                            <i class="fas fa-coins"></i> Tạo Dựng Giá Trị Thực
+                        </div>
+                    </div>
+
+                    <!-- Bento 2: Mục tiêu dài hạn -->
+                    <div class="bento-box bento-item-emerald gsap-reveal">
+                        <div class="bento-badge"><i class="fas fa-chart-line"></i> MỤC TIÊU DÀI HẠN</div>
+                        <div class="bento-metric emerald-text">KIẾM THẬT NHIỀU TIỀN</div>
+                        <h3>Tự Do Tài Chính & Đỉnh Cao Nghề Nghiệp</h3>
+                        <p>
+                            Không ngừng nâng cấp chuyên môn công nghệ thông tin, trở thành nhân sự có giá trị cao trên thị trường phần mềm để đạt được sự tự do tài chính vững chắc.
+                        </p>
+                        <div class="bento-bottom-pill emerald">
+                            <i class="fas fa-gem"></i> Thành Công Bền Vững
+                        </div>
+                    </div>
+
+                    <!-- Bento 3: Hệ thống kỹ thuật rộng (Full width) -->
+                    <div class="bento-box bento-item-wide gsap-reveal">
+                        <div class="bento-wide-header">
+                            <div>
+                                <div class="bento-badge"><i class="fas fa-microchip"></i> KỸ NĂNG & HỆ CÔNG CỤ</div>
+                                <h3>Hệ Sinh Thái Kỹ Thuật Cá Nhân</h3>
+                            </div>
+                            <span class="chip-indicator">C++ Core Engine</span>
+                        </div>
+
+                        <div class="bento-skills-bars">
+                            <div class="skill-meter">
+                                <div class="meter-head">
+                                    <span><i class="fas fa-code"></i> Lập trình C++ & Tư duy Hướng đối tượng (OOP / C++17)</span>
+                                    <strong>nắm vững cơ bản</strong>
+                                </div>
+                                <div class="meter-track"><div class="meter-fill" style="width: 90%;"></div></div>
+                            </div>
+
+                            <div class="skill-meter">
+                                <div class="meter-head">
+                                    <span><i class="fas fa-project-diagram"></i> Cấu trúc Dữ liệu & Giải thuật C++ (Data Structures & STL)</span>
+                                    <strong>Có Tư duy logic </strong>
+                                </div>
+                                <div class="meter-track"><div class="meter-fill" style="width: 88%;"></div></div>
+                            </div>
+
+                            <div class="skill-meter">
+                                <div class="meter-head">
+                                    <span><i class="fas fa-boxes-stacked"></i> Thiết kế Hệ thống Quản lý Bán hàng & Tồn kho Đa kênh</span>
+                                    <strong>Xử lý dữ liệu thực tế</strong>
+                                </div>
+                                <div class="meter-track"><div class="meter-fill" style="width: 86%;"></div></div>
+                            </div>
+
+                            <div class="skill-meter">
+                                <div class="meter-head">
+                                    <span><i class="fas fa-users-cog"></i> Kỹ năng mềm: Làm việc nhóm, Tự học & Phân tích giải pháp</span>
+                                    <strong>Phối hợp ăn ý</strong>
+                                </div>
+                                <div class="meter-track"><div class="meter-fill" style="width: 92%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 5. TRIỂN LÃM DỰ ÁN (PROJECT GALLERY) ==================== -->
+        <section id="projects" class="flagship-section projects-section">
+            <div class="mi-shell">
+                <div class="section-title-area gsap-reveal">
+                    <span class="area-tag">TRIỂN LÃM DỰ ÁN</span>
+                    <h2 class="area-heading">Những kiệt tác số tiêu biểu.</h2>
+                    <p class="area-desc">
+                        Từng sản phẩm web đều được chau chuốt kỹ lưỡng từ cấu trúc giao diện cho đến trải nghiệm người dùng tối ưu.
+                    </p>
+                </div>
+
+                <div class="projects-double-deck">
+                    
+                    <!-- Dự án 1: Tạp Hóa Online -->
+                    <div class="project-deck-card gsap-reveal">
+                        <div class="project-banner taphoa-theme">
+                            <div class="banner-badge">E-COMMERCE // NỀN TẢNG BÁCH HÓA</div>
+                            <div class="banner-icon"><i class="fas fa-shopping-basket"></i></div>
+                        </div>
+                        <div class="project-details">
+                            <div class="proj-timeline">DỰ ÁN TÂM ĐẮC 2026</div>
+                            <h3 class="proj-name">Tạp Hóa Online (TapHoa36 - Bách Hóa Trực Tuyến)</h3>
+                            <p class="proj-summary">
+                                Xây dựng nền tảng thương mại điện tử chuyên nghiệp phục vụ nhu cầu mua sắm tạp hóa online thường nhật. Tối ưu hóa danh mục hàng hóa, quản lý giỏ hàng trực quan, tốc độ xử lý nhanh và giao diện thân thiện với người dùng.
+                            </p>
+                            <div class="proj-tags">
+                                <span>C++ Logic</span>
+                                <span>Tạp Hóa Online</span>
+                                <span>E-Commerce</span>
+                                <span>Database</span>
+                                <span>Responsive</span>
+                            </div>
+                            <div class="proj-cta-bar">
+                                <a href="../TapHoa36.html" class="btn-action-primary">
+                                    <i class="fas fa-external-link-alt"></i> Trải Nghiệm TapHoa36
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dự án 2: Hệ Thống Quản Lý Bán Hàng & Tồn Kho Đa Kênh -->
+                    <div class="project-deck-card gsap-reveal">
+                        <div class="project-banner group-theme" style="background: linear-gradient(135deg, #0d1b2a, #1b263b);">
+                            <div class="banner-badge" style="color: #00f5d4; border-color: rgba(0, 245, 212, 0.4);">OMNICHANNEL // HỆ THỐNG DOANH NGHIỆP</div>
+                            <div class="banner-icon" style="color: #00f5d4;"><i class="fas fa-boxes-stacked"></i></div>
+                        </div>
+                        <div class="project-details">
+                            <div class="proj-timeline">GIẢI PHÁP QUẢN TRỊ 2026</div>
+                            <h3 class="proj-name">Hệ Thống Quản Lý Bán Hàng & Tồn Kho Đa Kênh</h3>
+                            <p class="proj-summary">
+                                Giải pháp phần mềm quản trị toàn diện: đồng bộ hóa tồn kho theo thời gian thực trên đa kênh bán hàng, quản lý danh mục sản phẩm, theo dõi quy trình xuất - nhập kho, phân tích số liệu kinh doanh và cảnh báo ngưỡng hàng tồn thông minh.
+                            </p>
+                            <div class="proj-tags">
+                                <span>C++</span>
+                                <span>OOP</span>
+                                <span>Quản Lý Tồn Kho</span>
+                                <span>Đa Kênh (Omnichannel)</span>
+                                <span>Kiến Trúc Dữ Liệu</span>
+                            </div>
+                            <div class="proj-cta-bar">
+                                <a href="#contact" class="btn-action-secondary">
+                                    <i class="fas fa-layer-group"></i> Khám Phá Kiến Trúc Hệ Thống
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 6. HỌC VẤN & HOẠT ĐỘNG (EDUCATION) ==================== -->
+        <section id="education" class="flagship-section education-section">
+            <div class="mi-shell">
+                <div class="section-title-area gsap-reveal">
+                    <span class="area-tag">HỌC VẤN & HOẠT ĐỘNG</span>
+                    <h2 class="area-heading">Hành trình tri thức.</h2>
+                    <p class="area-desc">Nền tảng học vấn và các hoạt động cộng đồng trong suốt quá trình học tập.</p>
+                </div>
+
+                <div class="education-timeline gsap-reveal">
+                    <!-- Mốc 1: 6 tuổi (2012) -->
+                    <div class="edu-item">
+                        <div class="edu-dot" style="background: linear-gradient(135deg, #ff9000, #ff5500);"><i class="fas fa-book-open" style="font-size: 15px; color: #fff;"></i></div>
+                        <div class="edu-content">
+                            <div class="edu-period">6 Tuổi (2012)</div>
+                            <h3 class="edu-name">Bước Vào Lớp 1 — Khởi Đầu Hành Trình Tri Thức</h3>
+                            <div class="edu-major"><i class="fas fa-child"></i> Bậc Tiểu Học — Khám phá thế giới con chữ</div>
+                            <p class="edu-desc">Những ngày đầu tiên cắp sách tới trường, làm quen với từng con chữ, con số đầu đời. Giai đoạn ươm mầm sự tò mò và niềm say mê khám phá tri thức mới.</p>
+                            <div class="edu-tags">
+                                <span class="edu-tag"><i class="fas fa-star"></i> Lớp 1</span>
+                                <span class="edu-tag"><i class="fas fa-pencil-alt"></i> Vỡ lòng</span>
+                                <span class="edu-tag"><i class="fas fa-heart"></i> Khởi đầu tri thức</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mốc 2: 11 tuổi (2017) -->
+                    <div class="edu-item">
+                        <div class="edu-dot" style="background: linear-gradient(135deg, #a8a2ff, #7069ed);"><i class="fas fa-compass" style="font-size: 15px; color: #fff;"></i></div>
+                        <div class="edu-content">
+                            <div class="edu-period">11 Tuổi (2017)</div>
+                            <h3 class="edu-name">Vào Lớp 6 Cấp 2 — Giai Đoạn Đầy Thăng Trầm</h3>
+                            <div class="edu-major"><i class="fas fa-school"></i> Bậc Trung Học Cơ Sở — Thử thách & Rèn giũa</div>
+                            <p class="edu-desc">Bước vào môi trường học tập mới với nhiều thay đổi và đầy thăng trầm. Từng thử thách của tuổi mới lớn là hành trang quý giá giúp bản thân tôi luyện ý chí vững vàng, tính tự lập và bản lĩnh sống.</p>
+                            <div class="edu-tags">
+                                <span class="edu-tag"><i class="fas fa-mountain"></i> Thăng trầm</span>
+                                <span class="edu-tag"><i class="fas fa-shield-alt"></i> Bản lĩnh</span>
+                                <span class="edu-tag"><i class="fas fa-user-check"></i> Tự lập</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mốc 3: 15 tuổi (2021) -->
+                    <div class="edu-item">
+                        <div class="edu-dot" style="background: linear-gradient(135deg, #00f5d4, #00bb9b);"><i class="fas fa-laptop-code" style="font-size: 15px; color: #111;"></i></div>
+                        <div class="edu-content">
+                            <div class="edu-period">15 Tuổi (2021)</div>
+                            <h3 class="edu-name">Vào Lớp 10 Cấp 3 — Sự Bùng Nổ Về CNTT</h3>
+                            <div class="edu-major"><i class="fas fa-code"></i> Bậc Trung Học Phổ Thông — Đánh thức đam mê công nghệ</div>
+                            <p class="edu-desc">Giai đoạn bước ngoặt với sự bùng nổ mạnh mẽ niềm đam mê Công nghệ Thông tin. Say mê mày mò máy tính, tư duy thuật toán, tiếp cận lập trình và xác định con đường kỹ sư công nghệ tương lai.</p>
+                            <div class="edu-tags">
+                                <span class="edu-tag"><i class="fas fa-fire"></i> Bùng nổ CNTT</span>
+                                <span class="edu-tag"><i class="fas fa-microchip"></i> Đam mê mã nguồn</span>
+                                <span class="edu-tag"><i class="fas fa-bullseye"></i> Định hướng sự nghiệp</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mốc 4: Năm 2024 (18 tuổi) -->
+                    <div class="edu-item">
+                        <div class="edu-dot" style="background: linear-gradient(135deg, #ffd700, #ffaa00);"><i class="fas fa-graduation-cap" style="font-size: 15px; color: #111;"></i></div>
+                        <div class="edu-content">
+                            <div class="edu-period">Năm 2024</div>
+                            <h3 class="edu-name">Chính Thức Đậu Đại Học UTH TP.HCM</h3>
+                            <div class="edu-major"><i class="fas fa-university"></i> Trường ĐH Giao thông vận tải TP.HCM — Khoa CNTT</div>
+                            <p class="edu-desc">Chính thức trở thành sinh viên chuyên ngành Công nghệ Thông tin trường Đại học GTVT TP.HCM (UTH). Khẳng định sự nỗ lực đèn sách, mở ra cánh cửa học thuật chuyên sâu và môi trường phát triển toàn diện.</p>
+                            <div class="edu-tags">
+                                <span class="edu-tag"><i class="fas fa-award"></i> Đậu Đại học UTH</span>
+                                <span class="edu-tag"><i class="fas fa-laptop"></i> Khoa CNTT K24</span>
+                                <span class="edu-tag"><i class="fas fa-flag"></i> Khởi đầu mới</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mốc 5: Năm 2025 -->
+                    <div class="edu-item">
+                        <div class="edu-dot" style="background: linear-gradient(135deg, #38ef7d, #11998e);"><i class="fas fa-rocket" style="font-size: 15px; color: #fff;"></i></div>
+                        <div class="edu-content">
+                            <div class="edu-period">Năm 2025 (Năm 2)</div>
+                            <h3 class="edu-name">Sinh Viên Năm 2 — Đầy Hoài Bão & Mong Ước</h3>
+                            <div class="edu-major"><i class="fas fa-lightbulb"></i> Tích lũy kiến thức & Thực chiến đồ án</div>
+                            <p class="edu-desc">Năm thứ hai đại học với ngọn lửa nhiệt huyết rực cháy, tích lũy sâu kiến thức C++, cấu trúc dữ liệu và giải thuật. Hoạt động tích cực trong CLB / Nhóm 11, không ngừng nuôi dưỡng hoài bão vươn xa.</p>
+                            <div class="edu-tags">
+                                <span class="edu-tag"><i class="fas fa-compass"></i> Hoài bão lớn</span>
+                                <span class="edu-tag"><i class="fas fa-users"></i> CLB / Nhóm 11</span>
+                                <span class="edu-tag"><i class="fas fa-cogs"></i> Thực hành C++</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mốc 6: Năm 2026 -->
+                    <div class="edu-item">
+                        <div class="edu-dot" style="background: linear-gradient(135deg, #ff0055, #ff5500);"><i class="fas fa-bolt" style="font-size: 15px; color: #fff;"></i></div>
+                        <div class="edu-content">
+                            <div class="edu-period">Nay 2026 (Năm 3)</div>
+                            <h3 class="edu-name">Sinh Viên Năm 3 — Khát Khao Về Cuộc Sống Mới</h3>
+                            <div class="edu-major"><i class="fas fa-trophy"></i> Trưởng thành tư duy & Bứt phá giá trị</div>
+                            <p class="edu-desc">Bước vào năm thứ ba với đầy khát khao về một cuộc sống mới tự chủ, thành công và thịnh vượng. Làm chủ công nghệ C++, xây dựng các sản phẩm thực tiễn như Tạp Hóa Online và Hệ Thống Quản Lý Bán Hàng & Tồn Kho Đa Kênh, hiện thực hóa mục tiêu tự do tài chính.</p>
+                            <div class="edu-tags">
+                                <span class="edu-tag"><i class="fas fa-sun"></i> Cuộc sống mới</span>
+                                <span class="edu-tag"><i class="fas fa-gem"></i> Tự do tài chính</span>
+                                <span class="edu-tag"><i class="fas fa-check-circle"></i> Bứt phá 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 7. CHỨNG CHỈ & SỞ THÍCH (CERTIFICATES) ==================== -->
+        <section id="certificates" class="flagship-section certificates-section">
+            <div class="mi-shell">
+                <div class="section-title-area gsap-reveal">
+                    <span class="area-tag">CHỨNG CHỈ & SỞ THÍCH</span>
+                    <h2 class="area-heading">Thành tựu & Đam mê.</h2>
+                    <p class="area-desc">Những chứng nhận kỹ năng và sở thích cá nhân của Trần Ngọc Lâm.</p>
+                </div>
+
+                <div class="cert-hobby-grid gsap-reveal">
+                    <!-- Chứng chỉ -->
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <h3>Chứng chỉ</h3>
+                        <div class="cert-status-empty" style="background: rgba(16, 185, 129, 0.12); border-color: rgba(16, 185, 129, 0.3); color: #10b981;">
+                            <i class="fas fa-check-circle" style="color: #10b981;"></i>
+                            <span>Tin học cơ bản</span>
+                        </div>
+                        <p class="cert-title-highlight" style="font-weight: 700; color: #fff; margin-top: 14px; font-size: 1.05rem;">Chứng chỉ Ứng dụng CNTT Cơ bản</p>
+                        <p class="cert-note">Đã hoàn thành chứng chỉ Ứng dụng Công nghệ Thông tin Cơ bản (Tin học cơ bản), nắm vững kiến thức sử dụng máy tính, hệ điều hành, soạn thảo văn bản và Internet an toàn.</p>
+                    </div>
+
+                    <!-- Sở thích -->
+                    <div class="cert-card hobby-card">
+                        <div class="cert-icon hobby-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Sở thích</h3>
+                        <div class="hobby-list">
+                            <div class="hobby-item">
+                                <div class="hobby-icon-wrap"><i class="fas fa-walking"></i></div>
+                                <div class="hobby-info">
+                                    <strong>Đi dạo</strong>
+                                    <span>Thư giãn, tái tạo năng lượng và khơi nguồn cảm hứng sáng tạo</span>
+                                </div>
+                            </div>
+                            <div class="hobby-item">
+                                <div class="hobby-icon-wrap"><i class="fas fa-smile"></i></div>
+                                <div class="hobby-info">
+                                    <strong>Hòa đồng</strong>
+                                    <span>Luôn thân thiện, cởi mở và dễ kết bạn trong mọi môi trường</span>
+                                </div>
+                            </div>
+                            <div class="hobby-item">
+                                <div class="hobby-icon-wrap"><i class="fas fa-users"></i></div>
+                                <div class="hobby-info">
+                                    <strong>Đội nhóm</strong>
+                                    <span>Yêu thích làm việc cộng tác và phát huy sức mạnh tập thể</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 8. BẢNG THÔNG SỐ NĂNG LỰC TOÀN DIỆN (SPECS SHEET) ==================== -->
+        <section id="specs" class="flagship-section specs-section">
+            <div class="mi-shell">
+                <div class="section-title-area gsap-reveal">
+                    <span class="area-tag">SPECS SHEET</span>
+                    <h2 class="area-heading">Thông tin Cơ bản</h2>
+                    <p class="area-desc">Bảng tổng hợp chi tiết hồ sơ năng lực của Trần Ngọc Lâm.</p>
+                </div>
+
+                <div class="specs-table-container gsap-reveal">
+                    <table class="flagship-specs-table">
+                        <tbody>
+                            <tr>
+                                <td class="specs-category" rowspan="4">Thông Tin Cá Nhân</td>
+                                <td class="specs-field">Họ và tên</td>
+                                <td class="specs-data"><strong>Trần Ngọc Lâm</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="specs-field">Năm sinh</td>
+                                <td class="specs-data"><strong>2006</strong> (20 tuổi)</td>
+                            </tr>
+                            <tr>
+                                <td class="specs-field">Quê quán</td>
+                                <td class="specs-data"><strong>Thái Bình</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="specs-field">Vị trí đảm nhận</td>
+                                <td class="specs-data"><span class="highlight-orange">Thành viên của Nhóm 11</span></td>
+                            </tr>
+
+                            <tr>
+                                <td class="specs-category" rowspan="3">Học Vấn & Đào Tạo</td>
+                                <td class="specs-field">Cơ sở đào tạo</td>
+                                <td class="specs-data"><strong>Trường Đại học Giao thông vận tải TP.HCM (UTH)</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="specs-field">Chuyên ngành</td>
+                                <td class="specs-data"><strong>Công nghệ Thông tin (CNTT)</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="specs-field">Niên khóa</td>
+                                <td class="specs-data"><strong>2024</strong> (Sinh viên năm 3 UTH — 2026)</td>
+                            </tr>
+
+                            <tr>
+                                <td class="specs-category" rowspan="4">Năng Lực Kỹ Thuật</td>
+                                <td class="specs-field">Ngôn ngữ cốt lõi</td>
+                                <td class="specs-data"><strong>C++</strong> (OOP, STL, Cấu trúc Dữ liệu & Giải thuật)</td>
+                            </tr>
+                            <tr>
+                                <td class="specs-field">Dự án tiêu biểu</td>
+                                <td class="specs-data">Tạp Hóa Online (TapHoa36), Hệ Thống Quản Lý Bán Hàng & Tồn Kho Đa Kênh</td>
+                            </tr>
+                            <tr>
+                                <td class="specs-field">Công cụ phát triển</td>
+                                <td class="specs-data">Visual Studio, Git, Antigravity AI</td>
+                            </tr>
+                            <tr>
+                                <td class="specs-field">Kỹ năng mềm</td>
+                                <td class="specs-data">Làm việc nhóm, Tư duy logic hệ thống, Tự học & Nghiên cứu độc lập</td>
+                            </tr>
+
+                            <tr>
+                                <td class="specs-category" rowspan="3">Chứng Chỉ & Hoạt Động</td>
+                                <td class="specs-field">Chứng chỉ</td>
+                                <td class="specs-data"><strong>Ứng dụng CNTT Cơ bản (Tin học cơ bản)</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="specs-field">Hoạt động / CLB</td>
+                                <td class="specs-data"><strong>Nhóm 11</strong> — Môn Lập Trình Web (UTH K24)</td>
+                            </tr>
+                            <tr>
+                                <td class="specs-field">Sở thích cá nhân</td>
+                                <td class="specs-data">Thích đi dạo thư giãn, tính cách hòa đồng, làm việc nhóm</td>
+                            </tr>
+
+                            <tr>
+                                <td class="specs-category" rowspan="2">Mục Tiêu & Định Hướng</td>
+                                <td class="specs-field">Mục tiêu ngắn hạn</td>
+                                <td class="specs-data"><strong>Kiếm tiền</strong> từ kỹ năng lập trình thực tế</td>
+                            </tr>
+                            <tr>
+                                <td class="specs-field">Mục tiêu dài hạn</td>
+                                <td class="specs-data"><strong>Kiếm thật nhiều tiền</strong> & Tự do tài chính vững chắc</td>
+                            </tr>
+
+                            <tr>
+                                <td class="specs-category" rowspan="2">Kênh Liên Lạc</td>
+                                <td class="specs-field">Hòm thư điện tử</td>
+                                <td class="specs-data"><a href="mailto:lam229226@gmail.com" class="data-link">lam229226@gmail.com</a></td>
+                            </tr>
+                            <tr>
+                                <td class="specs-field">Tình trạng kết nối</td>
+                                <td class="specs-data"><span class="online-indicator"><i class="fas fa-circle"></i> Sẵn sàng kết nối và hợp tác</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 9. LIÊN HỆ — FORM CÓ VALIDATE JS ==================== -->
+        <section id="contact" class="flagship-section contact-section">
+            <div class="mi-shell">
+                <div class="section-title-area gsap-reveal">
+                    <span class="area-tag">LIÊN HỆ</span>
+                    <h2 class="area-heading">Cùng kiến tạo những dự án công nghệ vượt bậc</h2>
+                    <p class="area-desc">Mọi cơ hội hợp tác, trao đổi đồ án hoặc thảo luận kỹ thuật đều được chào đón nồng nhiệt.</p>
+                </div>
+
+                <!-- Form liên hệ với validate JS -->
+                <div class="contact-form-wrapper gsap-reveal">
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="contactName">Họ và tên <span class="required-star">*</span></label>
+                            <input type="text" id="contactName" name="name" placeholder="Nhập họ và tên của bạn" autocomplete="name">
+                            <div class="form-error" id="nameError"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email <span class="required-star">*</span></label>
+                            <input type="email" id="contactEmail" name="email" placeholder="example@email.com" autocomplete="email">
+                            <div class="form-error" id="emailError"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Lời nhắn <span class="required-star">*</span></label>
+                            <textarea id="contactMessage" name="message" rows="5" placeholder="Nội dung bạn muốn gửi tới Trần Ngọc Lâm..."></textarea>
+                            <div class="form-error" id="messageError"></div>
+                        </div>
+                        <div class="form-submit-area">
+                            <button type="submit" class="btn-form-submit">
+                                <i class="fas fa-paper-plane"></i> Gửi Lời Nhắn
+                            </button>
+                        </div>
+                        <div class="form-success" id="formSuccess"></div>
+                    </form>
+
+                    <div class="contact-extra-actions">
+                        <a href="mailto:lam229226@gmail.com" class="btn-action-primary btn-lg">
+                            <i class="fas fa-envelope"></i> Gửi Email Tới lam229226@gmail.com
+                        </a>
+                        <a href="../group11.html" class="btn-action-secondary btn-lg">
+                            <i class="fas fa-users"></i> Quay Lại Trang Nhóm 11
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="flagship-footer">
+        <div class="mi-shell footer-content">
+            <div class="footer-legal">
+                <p>&copy; 2026 TRẦN NGỌC LÂM — BẢN QUYỀN THUỘC VỀ THÀNH VIÊN NHÓM 11.</p>
+                <p class="footer-fine">Thiết kế theo ngôn ngữ Flagship hiện đại với hiệu ứng cuộn GSAP ScrollTrigger.</p>
+            </div>
+        </div>
+    </footer>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>
